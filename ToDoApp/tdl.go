@@ -1,4 +1,4 @@
-package main
+package tdl
 
 import (
 	"fmt"
@@ -44,12 +44,14 @@ Exit:
 			lg.Printf("Error while parsing the input %s: %v\n", text, err)
 			continue
 		}
-
+		lg.Printf("Parsed: %v", cmd)
+		
 		switch cmd.Main {
 			case 'Q':
 				fmt.Println("Quitting application.")
 				break Exit
 			case 'C':
+
 				
 		}
 	}
